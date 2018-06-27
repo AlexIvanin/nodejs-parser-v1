@@ -1,0 +1,35 @@
+{
+  "name": "patriot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run parse:all",
+    "parse:all": "node app.js --parse=Parsing,FullParser,Csv",
+    "parse:list": "node app.js --parse=list",
+    "parse:products": "node app.js --parse=products",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "itprosteer",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "cheerio": "^1.0.0-rc.2",
+    "cllc": "0.0.10",
+    "dotenv": "^4.0.0",
+    "event-stream": "^3.3.4",
+    "fs": "0.0.1-security",
+    "json-csv": "^1.5.0",
+    "lowdb": "^1.0.0",
+    "mongoose": "^5.0.3",
+    "needle": "^2.1.1",
+    "object-hash": "^1.2.0",
+    "progress": "^2.0.0",
+    "retry-as-promised": "^2.3.2",
+    "tress": "^1.0.5",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "json-stringify-safe": "^5.0.1"
+  }
+}
